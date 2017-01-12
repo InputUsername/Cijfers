@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<title>Cijfer-tool</title>
+
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Cijfer berekenen</h1>
+		<div class="section">
+			<h2>Gewenst cijfer</h2>
+			<h3>Het gewenste gemiddelde</h3>
+			<input class="number" id="gradeWanted" type="number" value="" min="1" max="10" step="0.1">
+		</div>
+		<div class="section">
+			<h2>Behaalde cijfers</h2>
+			<h3>Je eerder behaalde cijfers</h3>
+			<div id="gradesGot">
+			</div>
+			<input id="gradeAdd" type="button" value="Cijfer toevoegen">
+		</div>
+		<div class="section">
+			<h2>Gewicht</h2>
+			<h3>Gewicht van het te behalen cijfer</h3>
+			<input class="number" id="gradeWeight" type="number" value="" min="0" step="0.1">
+		</div>
+		<div class="section">
+			<h2>Benodigd cijfer</h2>
+			<input id="gradeCalculate" type="button" value="Bereken">
+			<p>Je hebt een <input class="number" id="gradeNeeded" type="number" value="" disabled> nodig!</p>
+		</div>
+		<div class="section">
+			<p id="copyright">&copy; 2016 Koen Bolhuis</p>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+	<script src="code.js" type="text/javascript"></script>
+</body>
+</html>
